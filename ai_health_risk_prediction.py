@@ -8,7 +8,6 @@ def bmi_category(bmi):
     else:
         return "Obese"
 
-
 def diabetes_risk(age, bmi, exercise):
     risk = 0
 
@@ -54,3 +53,4 @@ print("\n----- Health Analysis Report -----")
 print("BMI Category       :", bmi_category(bmi))
 print("Diabetes Risk      :", diabetes_risk(age, bmi, exercise))
 print("Obesity Risk       :", obesity_risk(bmi, junk_food))
+
