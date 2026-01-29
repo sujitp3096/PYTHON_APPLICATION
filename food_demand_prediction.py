@@ -13,8 +13,7 @@ df = pd.DataFrame(data)
 
 X = df[['DayType', 'Weather', 'PastSales']]
 y = df['Demand']
-
-# Train model
+#TRAIN
 model = LinearRegression()
 model.fit(X, y)
 
@@ -28,3 +27,4 @@ past_sales = int(input("Past Sales Count: "))
 prediction = model.predict([[day, weather, past_sales]])
 
 print("Predicted Food Demand:", int(prediction[0]))
+
