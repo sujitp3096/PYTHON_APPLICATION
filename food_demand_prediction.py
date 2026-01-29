@@ -17,7 +17,7 @@ y = df['Demand']
 model = LinearRegression()
 model.fit(X, y)
 
-# User input
+# USER INPUT
 print("Enter Food Demand Details:")
 day = int(input("Day Type (1=Weekday, 0=Weekend): "))
 weather = int(input("Weather (0=Rainy, 1=Normal, 2=Sunny): "))
@@ -27,4 +27,5 @@ past_sales = int(input("Past Sales Count: "))
 prediction = model.predict([[day, weather, past_sales]])
 
 print("Predicted Food Demand:", int(prediction[0]))
+
 
