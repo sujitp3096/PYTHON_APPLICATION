@@ -8,6 +8,7 @@ def predict_performance(marks, attendance):
     elif score >= 50:
         return "PASS", "Grade C"
     else:
+
         return "FAIL", "Grade D"
 
 
@@ -23,4 +24,5 @@ status, grade = predict_performance(marks, attendance)
 print("\n----- Prediction Result -----")
 print("Result :", status)
 print("Grade  :", grade)
+
 
