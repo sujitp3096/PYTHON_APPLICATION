@@ -17,7 +17,6 @@ y = df['Traffic']
 # Train model
 model = DecisionTreeClassifier()
 model.fit(X, y)
-
 # User input
 print("Enter Traffic Details:")
 time = int(input("Enter Time (0-23): "))
@@ -33,4 +32,5 @@ elif prediction[0] == 1:
     print("Predicted Traffic Level: MEDIUM")
 else:
     print("Predicted Traffic Level: HIGH")
+
 
