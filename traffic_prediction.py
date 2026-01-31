@@ -23,7 +23,6 @@ print("Enter Traffic Details:")
 time = int(input("Enter Time (0-23): "))
 day = int(input("Enter Day Type (1=Weekday, 0=Weekend): "))
 location = int(input("Location (0=Residential, 1=Office, 2=Highway): "))
-
 # Prediction
 prediction = model.predict([[time, day, location]])
 
@@ -34,3 +33,4 @@ elif prediction[0] == 1:
     print("Predicted Traffic Level: MEDIUM")
 else:
     print("Predicted Traffic Level: HIGH")
+
