@@ -9,6 +9,7 @@ data = {
     'Demand': [130, 110, 190, 210, 160, 100, 170]
 }
 
+
 df = pd.DataFrame(data)
 
 X = df[['DayType', 'Weather', 'PastSales']]
