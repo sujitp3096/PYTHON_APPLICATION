@@ -14,6 +14,7 @@ df = pd.DataFrame(data)
 
 X = df[['DayType', 'Weather', 'PastSales']]
 y = df['Demand']
+
 #TRAIN
 model = LinearRegression()
 model.fit(X, y)
