@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
+
 # Sample dataset
 data = {
     'DayType': [1, 1, 0, 0, 1, 0, 1],        # 1 = Weekday, 0 = Weekend
