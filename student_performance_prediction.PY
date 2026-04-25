@@ -12,6 +12,7 @@ def predict_performance(marks, attendance):
         return "FAIL", "Grade D"
 
 
+
 print("===== Student Performance Prediction System =====")
 
 
