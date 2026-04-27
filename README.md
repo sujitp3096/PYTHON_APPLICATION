@@ -14,6 +14,7 @@ This repository contains simple and easy Python projects, including basic AI and
 - AI-based mini projects
 - Real-world problem solving
 
+
 ## ▶️ How to Run
 1. Clone the repository
 2. Install Python 3.x
