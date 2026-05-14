@@ -9,6 +9,7 @@ data = {
     'Traffic': [2, 2, 1, 2, 2, 1, 0, 0]   # 0=Low,1=Medium,2=High
 }
 
+
 df = pd.DataFrame(data)
 
 X = df[['Time', 'DayType', 'Location']]
