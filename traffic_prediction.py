@@ -8,8 +8,6 @@ data = {
     'Location': [1, 1, 2, 1, 2, 2, 0, 0], # 0=Residential,1=Office,2=Highway
     'Traffic': [2, 2, 1, 2, 2, 1, 0, 0]   # 0=Low,1=Medium,2=High
 }
-
-
 df = pd.DataFrame(data)
 
 X = df[['Time', 'DayType', 'Location']]
