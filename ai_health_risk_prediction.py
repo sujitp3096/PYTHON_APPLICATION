@@ -7,7 +7,6 @@ def bmi_category(bmi):
         return "Overweight"
     else:
         return "Obese
-
 def diabetes_risk(age, bmi, exercise):
     risk = 0
 
