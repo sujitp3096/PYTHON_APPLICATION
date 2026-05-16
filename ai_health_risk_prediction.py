@@ -41,6 +41,7 @@ def obesity_risk(bmi, junk_food):
         return "Low Risk"
 
 
+
 print("===== AI Health Risk Prediction System =====")
 
 age = int(input("Enter Age: "))
