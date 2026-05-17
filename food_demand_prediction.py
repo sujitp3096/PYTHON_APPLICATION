@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 
-# Sample 
+# Sample
 data = {
     'DayType': [1, 1, 0, 0, 1, 0, 1],        # 1 = Weekday, 0 = Weekend
     'Weather': [1, 0, 1, 2, 2, 0, 1],       # 0 = Rainy, 1 = Normal, 2 = Sunny
