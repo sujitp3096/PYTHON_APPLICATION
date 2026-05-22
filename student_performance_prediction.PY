@@ -14,7 +14,6 @@ def predict_performance(marks, attendance):
 print("===== Student Performance Prediction System =====")
 
 
-
 marks = float(input("Enter previous exam marks (0-100): "))
 attendance = float(input("Enter attendance percentage (0-100): "))
 
