@@ -20,6 +20,7 @@ This repository contains simple and easy Python projects, including basic AI and
 2. Install Python 3.x
 3. Run files using:
    python filename.py
+   
 
 ## 🎯 Purpose
 Learning Python programming and introductory AI/ML concepts.
