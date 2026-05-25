@@ -3,7 +3,6 @@
 ## 📌 Description
 This repository contains simple and easy Python projects, including basic AI and Machine Learning applications.
 
-
 ## 🛠 Technologies Used
 - Python
 - Basic Machine Learning
