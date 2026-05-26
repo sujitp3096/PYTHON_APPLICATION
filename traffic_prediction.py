@@ -13,7 +13,7 @@ df = pd.DataFrame(data)
 X = df[['Time', 'DayType', 'Location']]
 y = df['Traffic']
 
-# Train model
+# Train mode
 model = DecisionTreeClassifier()
 model.fit(X, y)
 # User input
