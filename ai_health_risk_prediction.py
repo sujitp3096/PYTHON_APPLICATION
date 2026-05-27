@@ -17,6 +17,7 @@ def diabetes_risk(age, bmi, exercise):
     if exercise == "no":
         risk += 2
 
+    
     if risk >= 5:
         return "High Risk"
     elif risk >= 3:
