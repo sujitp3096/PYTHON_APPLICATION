@@ -3,6 +3,7 @@ def bmi_category(bmi):
         return "Underweight"
     elif bmi < 25:
         return "Normal"
+        
     elif bmi < 30:
         return "Overweight"
     else:
