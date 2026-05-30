@@ -12,6 +12,7 @@ def bmi_category(bmi):
 def diabetes_risk(age, bmi, exercise):
     risk = 0
 
+    
     if age > 45:
         risk += 2
     if bmi >= 25:
