@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 
 # Sample
 data = {
-    'DayType': [1, 1, 0, 0, 1, 0, 1],        # 1 = Weekday, 0 = Weekend
+    'DayType': [1, 1, 0, 0, 1, 0, 1],        # 1 = , 0 = Weekend
     'Weather': [1, 0, 1, 2, 2, 0, 1],       # 0 = Rainy, 1 = Normal, 2 = Sunny
     'PastSales': [120, 100, 180, 200, 150, 90, 160],
     'Demand': [130, 110, 190, 210, 160, 100, 170]
