@@ -6,7 +6,7 @@ data = {
     'Time': [8, 9, 10, 17, 18, 19, 12, 14],
     'DayType': [1, 1, 1, 1, 1, 1, 0, 0],   # 1 = Weekday, 0 = Weekend
     'Location': [1, 1, 2, 1, 2, 2, 0, 0], # 0=Residential,1=Office,2=Highway
-    'Traffic': [2, 2, 1, 2, 2, 1, 0, 0]   # 
+    'Traffic': [2, 2, 1, 2, 2, 1, 0, 0]    
 }
 df = pd.DataFrame(data)
 
