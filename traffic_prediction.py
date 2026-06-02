@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-# Sample traffic datas
+# Sample traffic data
 
 data = {
     'Time': [8, 9, 10, 17, 18, 19, 12, 14],
