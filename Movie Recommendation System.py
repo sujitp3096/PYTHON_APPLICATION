@@ -11,6 +11,7 @@ cv = CountVectorizer()
 matrix = cv.fit_transform(movies['genre'])
 similarity = cosine_similarity(matrix)
 
+
 movie = "Avengers"
 index = movies[movies['title'] == movie].index[0]
 
