@@ -10,7 +10,7 @@ def predict_performance(marks, attendance):
     else:
         return "FAIL", "Grade D"
 
-print("===== Student Performance Prediction System =====")
+print("===== Student Performance Prediction System ====")
 
 marks = float(input("Enter previous exam marks (0-100): "))
 attendance = float(input("Enter attendance percentage (0-100): "))
