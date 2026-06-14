@@ -1,5 +1,4 @@
 import re
-
 password = input("Enter Password: ")
 
 if (len(password) >= 8 and
