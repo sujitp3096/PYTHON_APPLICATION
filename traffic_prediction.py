@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 # Sample traffic 
-
 data = {
     'Time': [8, 9, 10, 17, 18, 19, 12, 14],
     'DayType': [1, 1, 1, 1, 1, 1, 0, 0],   # 1 = Weekday, 0 = Weekend
