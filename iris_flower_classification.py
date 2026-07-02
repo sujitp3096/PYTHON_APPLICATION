@@ -1,24 +1,37 @@
-Use my uploaded reference image as the identity reference.
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
 
+# Load Dataset
+iris = load_iris()
 
-Preserve the person's facial identity exactly, including face shape, hairstyle, eyes, eyebrows, nose, lips, skin tone, expression, and body proportions.
+X = iris.data
+y = iris.target
 
+# Split Dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
-Create a premium minimalist editorial portrait inside a modern concrete studio with soft natural window light and warm afternoon shadows.
+# Train Model
+model = DecisionTreeClassifier(random_state=42)
+model.fit(X_train, y_train)
 
+# Test Accuracy
+predictions = model.predict(X_test)
+print("Accuracy:", round(accuracy_score(y_test, predictions) * 100, 2), "%")
 
-Next to the person stands a giant vertical sculpture made from stacked 3D letters spelling "S U J I T". The typography is freestanding with thick extrusion, clean geometric proportions, matte finish, realistic depth, subtle imperfections, soft shadows, and museum-quality craftsmanship.
+print("\nFlower Types:")
+for i, flower in enumerate(iris.target_names):
+    print(f"{i} - {flower}")
 
+# User Input
+sepal_length = float(input("\nSepal Length (cm): "))
+sepal_width = float(input("Sepal Width (cm): "))
+petal_length = float(input("Petal Length (cm): "))
+petal_width = float(input("Petal Width (cm): "))
 
-The subject casually leans against the sculptural letters with a relaxed editorial pose, looking away from the camera naturally.
+prediction = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
-
-Dress the subject in premium minimalist fashion matching the mood: shirtless,Athletic wear, concrete gym studio, bold matte black typography, premium sports campaign.
-
-Environment includes polished concrete flooring, soft textured walls, subtle architectural shadows, and luxurious minimal interior styling.
-
-
-Color palette is neutral with black, white, gray, beige, and concrete tones.
-
-
-Ultra realistic photography, editorial fashion campaign, architectural composition, luxury branding aesthetic, cinematic lighting, crisp typography, premium interior design, high-end magazine quality, photorealistic, 8K
+print("\nPredicted Flower:", iris.target_names[prediction[0]])
