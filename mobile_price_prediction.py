@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-# Sample Dataset
+# Sample Datase
 data = {
     "RAM": [4, 6, 8, 12, 4, 8, 6, 12, 16, 8],
     "Storage": [64, 128, 128, 256, 32, 256, 64, 512, 512, 256],
