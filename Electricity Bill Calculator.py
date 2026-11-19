@@ -1,3 +1,4 @@
+
 units = int(input("Enter Units Consumed: "))
 if units <= 100:
     bill = units * 5
