@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-# Sample Dataset
+# Sample Datase
 data = {
     "Amount": [100, 5000, 250, 10000, 150, 8000, 400, 12000, 350, 9000],
     "TransactionTime": [10, 22, 14, 2, 9, 1, 16, 3, 12, 5],
